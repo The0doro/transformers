@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#section1{
+    position: relative;
+    height: 100vh;
+    background-image: url(background1.jpg);
+    background-size: cover;
+    z-index: 20;
+}
+
+#section2 {
+    height: 130vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .left-side,
+  .right-side {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s, filter 0.3s;
+    z-index: 10;
+  }
+  
+  .left-side {
+    left: 0;
+    background-image: url(ad1.png);
+    z-index: 10;
+  }
+  
+  .right-side {
+    right: 0;
+    background-image: url(ad2.png);
+    z-index: 10;
+  }
+  
+  .left-side:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    filter: brightness(1.2);
+    z-index: 11;
+    box-shadow: 10px 10px 500px rgba(1, 15, 206, 0.5);;
+  }
+  
+  .right-side:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    filter: brightness(1.2);
+    z-index: 10;
+    box-shadow: 10px 10px 500px rgba(255, 3, 3, 0.5);;
+  }
+
+  
+
+.carousel-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.carousel {
+    max-width: 50vw; /* Defina o tamanho desejado para o carrossel */
+    margin: 0 auto;
+}
+
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+  }
+
+  .carousel-item img {
+    max-height: 80vh;
+    margin: auto;
+  }
+
+.carousel-caption h1 {
+    margin-bottom: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+  .carousel h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+main{
+    height: 100vw;
+}
+
