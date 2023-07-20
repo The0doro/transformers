@@ -4,6 +4,15 @@
     border: 0;
     box-sizing: border-box;
 }
+html{
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: Transformers;
+  src: url("Transformers\ Movie.ttf") format("truetype");
+}
+
 
 header{
     position: fixed;
@@ -12,26 +21,72 @@ header{
     z-index: 100;
 }
 
-#section1{
-    position: relative;
-    height: 100vh;
-    background-image: url(background1.jpg);
-    background-size: cover;
-    z-index: 20;
+/* Defina a animação do logotipo */
+
+
+/* Aplique a animação à classe logo */
+.logo{
+  animation: logoAnimation 2s ease-out infinite alternate; 
 }
 
+@keyframes logoAnimation{
+  0%{
+    transform: translatey(1vw)
+}
+}
+
+
+
+.btn-outline-success {
+  --bs-btn-color: #000000;
+  --bs-btn-border-color: #000000;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #000000;
+  --bs-btn-hover-border-color: #000000;
+  --bs-btn-focus-shadow-rgb: 25,135,84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #000000;
+  --bs-btn-active-border-color: #000000;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000000;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #000000;
+  --bs-gradient: none;
+}
+
+/* Seção 1*/
+
+#section1{
+  position:relative ;
+  background-image: url(tv.png);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  height: 50vw;
+  z-index: 20;
+}
+
+/* Seção 2 */ 
 #section2 {
-    height: 130vh;
+    height: 70vw;
     width: 100%;
     position: relative;
     z-index: 10;
   }
-  
+  .left-side a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .right-side a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
   .left-side,
   .right-side {
     position: absolute;
     top: 0;
-    height: 100%;
+    height: 70vw;
     width: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,46 +123,141 @@ header{
   }
 
   
-
+/* Carrossel 2 Seção */
 .carousel-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .carousel {
-    max-width: 50vw; /* Defina o tamanho desejado para o carrossel */
+    max-width: 50vw; 
     margin: 0 auto;
 }
 
-
-.carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-  }
-
-  .carousel-item img {
-    max-height: 80vh;
-    margin: auto;
-  }
-
 .carousel-caption h1 {
-    margin-bottom: 50%;
+    margin-bottom: 20vw;
     top: 0;
     left: 0;
     right: 0;
 }
 
-
-  .carousel h2 {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
+.carousel h2 {
+    font-size: 1.2vw;
+    margin-bottom: 1;
+}
   
 main{
-    height: 100vw;
+    height: 50vw;
 }
 
+/* Seção autobots */
+
+#section3{
+  position: relative;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  height: 50vw;
+  background-image: url(opt.jpg);
+  z-index: 20;
+}
+
+.carousel h5{
+margin-bottom: 12vw;
+font-size: 3vw;
+text-decoration-skip-ink: none;
+font-family: Transformers;
+}
+
+.borda{
+  background-color: #00000036;
+    -webkit-text-stroke: 1px black; /* Safari e Chrome */
+}
+
+
+.carousel p{
+  font-size: 1vw;
+  font-weight: 600;
+  background-color: rgba(14, 14, 14, 0.671);
+  border-radius: 10px;
+}
+
+/* Seção Decepticons */
+
+#section4{
+  position: relative;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  height: 50vw;
+  background-image: url(meg.jpg);
+  z-index: 20;
+}
+
+
+/* Seção final*/
+
+#section5{
+  background-image: url(tv.png);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  height: 50vw;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section5 h1{
+  font-family: Transformers;
+  margin-top: 2vw;
+  font-size: 3vw;
+  color: rgb(0, 0, 0);
+}
+#section5 h2{
+background-color: #ffffff;
+width: 25vw;
+}
+
+.offcanvas.offcanvas-bottom{
+height: 17vw;
+}
+
+.offcanvas-body{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offcanvas-header{
+  position: relative;
+  padding: 0;
+}
+
+.form2{
+  width: 30vw;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 1vw;
+}
+
+label{
+  font-size: 1vw;
+  color: rgb(0, 0, 0);
+}
+
+
+footer{
+    justify-content: bottom ;
+    height: 5vw;
+    width: 100%;
+    background-color: #f2f2f2;
+    text-align: center;
+    z-index: 100;
+}
+
+footer p{
+  font-family: transformers;
+  font-size: 1.5vw;
+}
